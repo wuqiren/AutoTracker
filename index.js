@@ -1,6 +1,7 @@
 class Observer{
-    constructor(element){
-        this.element = element
+    constructor(id){
+        this.element = document.getElementById(id) //一定是根元素
+        console.log( this.element,' this.element')
         this.init()
     }
     init(){
@@ -11,7 +12,7 @@ class Observer{
         // 开启监听
         observer.observe(this.element,{
             childList:true,
-            attributes:true
         })
     }
 }
+const observe = new Observer('div1')

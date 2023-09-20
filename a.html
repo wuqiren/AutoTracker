@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="div1"></div>
+    <button id="add1">添加子节点</button>
+    <button id="delete">删除子节点</button>
+    <script>
+        let add = document.getElementById("add1");
+        let deleteButton = document.getElementById("delete");
+        let div = document.getElementById("div1");
+        add.onclick = function(){
+            const spanItem = document.createElement("div");
+            spanItem.innerText = "我是Div";
+            div.appendChild(spanItem);
+        }
+        deleteButton.onclick = function(){
+           if(div.firstChild){
+            div.removeChild(div.firstChild);
+           }
+        }
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
