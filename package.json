@@ -1,0 +1,23 @@
+{
+  "name": "autotracker",
+  "version": "1.0.0",
+  "description": "Solve the pain of front-end invasive embedding points",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuqiren/AutoTracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuqiren/AutoTracker/issues"
+  },
+  "homepage": "https://github.com/wuqiren/AutoTracker#readme",
+  "dependencies": {
+    "rollup": "^3.29.2"
+  }
+}
