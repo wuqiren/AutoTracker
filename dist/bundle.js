@@ -4,6 +4,7 @@ class Panel{
    constructor(containerId) {
        this.container = document.getElementById(containerId);
        this.init();
+       this.loadCss();
     }
     init() {
         const panel = `
@@ -24,6 +25,13 @@ class Panel{
         close.addEventListener('click', () => {
             event.close();
         });
+    }
+    loadCss() {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = './panel/panel.css';
+        document.head.appendChild(link);
     }
 }
 
